@@ -20,6 +20,9 @@ nav {
     align-items: center;
     margin: 0 2vw;
 }
+.lista-menu {
+    display: none;
+}
 .buscador {
     grid-area: search;
     background-color: lightgray;
@@ -106,12 +109,18 @@ footer {
     }
     nav {
         flex-direction: column;
+        justify-content: start;
     }
     .logo {
-        justify-content: start;
+        justify-content: center;
     }
     .menu {
         display: none;
+    }
+    .lista-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
     main {
         grid-template-columns: auto auto auto auto;
